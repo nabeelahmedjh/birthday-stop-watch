@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: #393E46;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-family: 'Montez', cursive;
+    font-size: 8rem;
+    color: #D9F8C4;
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.heading {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#middle {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.watch {
+    font-size: 6rem;
+}
+
+.tenth-of-second {
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+.watch-btn {
+    margin: 10px 20px;
+}
+
+/* footer section  */
+
+#footer {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 100px;
+    text-align: center;
+
+}
