@@ -64,3 +64,36 @@ h2 {
     text-align: center;
 
 }
+
+
+
+/* media query */
+
+
+@media (max-width: 760px) {
+
+    .balloon {
+        display: none;
+    }
+
+    .timer {
+        text-align: center;
+        
+    }
+
+    .watch {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .watch-btn {
+        margin: 0;
+    }
+
+    #footer {
+        font-size: 0.5rem;
+    }
+}
