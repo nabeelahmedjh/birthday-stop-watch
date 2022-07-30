@@ -17,15 +17,21 @@ h2 {
 }
 
 .heading {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
+
+/* mid section */
 
 #middle {
     margin-top: 50px;
     text-align: center;
 }
 
+.balloon {
+    display: inline-block;
+    width: 80%;
+}
 .watch {
     font-size: 6rem;
 }
@@ -39,6 +45,15 @@ h2 {
 .watch-btn {
     margin: 10px 20px;
 }
+ 
+
+/* time stamp section */
+
+.time-stamp {
+    margin-top: 50px;
+    padding: 0 10%;
+}
+
 
 /* footer section  */
 
