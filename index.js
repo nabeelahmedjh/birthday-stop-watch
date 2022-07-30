@@ -1,5 +1,5 @@
 var watchButtons = document.querySelectorAll(".watch-btn")
-
+record = 0;
 watchButtons.forEach(button => {
     button.addEventListener("click", function() {
         decision(button);
@@ -15,6 +15,7 @@ function decision(button) {
             button.innerHTML = "Stop";
             timer = setInterval(updateTenthOfSecond, 100);
             document.querySelector("#watch-btn-2").toggleAttribute("disabled");
+            document.querySelector("#watch-btn-3").toggleAttribute("disabled");
 
             break;
         case 'Pause':
@@ -33,6 +34,13 @@ function decision(button) {
             InitialState();
             button.innerHTML = "Start";
             break;
+        case 'Record':
+            timestamp = document.querySelectorAll(".timer p")
+            record += 1
+            var tr = document.createElement("tr")
+            tr.innerHTML = `<tr><th scope='row'>${record}</th><td>${timestamp[0].innerHTML}</td><td>${timestamp[1].innerHTML}</td><td>${timestamp[2].innerHTML}.${timestamp[3].innerHTML}</td></tr>`;
+            document.querySelector(".table tbody").innerHTML += tr.innerHTML;
+
         default:
             break;
     }
@@ -93,6 +101,12 @@ function InitialState() {
     timers.forEach(timer => {
         timer.innerHTML = "00";
     });
+
+    timer = 1
     document.querySelector("#watch-btn-2").innerHTML = "Pause";
     document.querySelector("#watch-btn-2").toggleAttribute("disabled");
+    document.querySelector("#watch-btn-3").toggleAttribute("disabled");
+
+    document.querySelector(".table tbody").innerHTML = ""
+
 }
