@@ -102,7 +102,7 @@ function InitialState() {
         timer.innerHTML = "00";
     });
 
-    timer = 1
+    record = 1
     document.querySelector("#watch-btn-2").innerHTML = "Pause";
     document.querySelector("#watch-btn-2").toggleAttribute("disabled");
     document.querySelector("#watch-btn-3").toggleAttribute("disabled");
