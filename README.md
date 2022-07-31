@@ -12,3 +12,11 @@ The UI of a site is quite self explainatory. there are 3 buttons
 2. Pause/Resume: used to freeze and resume the watch
 <br>
 3. Record: used to record time stamps
+
+<hr>
+
+## ScreenShots
+
+![alt screen shot of the webpage](images/bb1.png "webpage")
+![alt screen shot of the webpage](images/bb2.png "webpage")
+![alt screen shot of the webpage](images/bb3.png "webpage")
